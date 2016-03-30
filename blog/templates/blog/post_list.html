@@ -6,6 +6,17 @@
 
 <body>
 The content of the document......
+
+<h1>Posty</h1>
+<hr>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+        <hr>
+    </div>
+{% endfor %}
 </body>
 
 </html> 
