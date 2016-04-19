@@ -31,10 +31,10 @@ class Kurs(models.Model):
         blank=True, null=True)
     
     class Meta:
-		verbose_name_plural = "Kursy"
-    
+        verbose_name_plural = "Kursy"
+
     def publish(self):
         self.save()
-        
+
     def __str__(self):
         return self.title
